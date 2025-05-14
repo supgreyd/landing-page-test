@@ -1,0 +1,24 @@
+@use 'variables' as *;
+ .promo {
+   background: $dark-gradient;
+   padding: 3rem 2rem;
+   text-align: center;
+   p {
+     color: $white;
+     font-size: 1.125rem;
+     letter-spacing: 0.275rem;
+     text-transform: uppercase;
+     span {
+       color: $blue-light;
+     }
+   }
+ }
+
+ @include respond-min($breakpoint-lg) {
+   .promo {
+     padding: 5rem 2rem;
+     p {
+       font-size: 1.375rem;
+     }
+   }
+ }

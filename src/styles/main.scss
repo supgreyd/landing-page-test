@@ -1,0 +1,15 @@
+@use "normalize";
+@forward 'variables';
+@use 'fonts';
+@use 'variables' as *;
+@use 'header';
+@use 'hero';
+@use 'promo';
+@use 'features';
+@use 'footer';
+@use 'popup';
+
+body {
+  font-family: $font-primary;
+  font-weight: $font-weight-regular;
+}

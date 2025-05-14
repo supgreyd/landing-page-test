@@ -1,0 +1,23 @@
+// break points
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+@mixin respond-min($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Colors
+$black: #000;
+$white: #fff;
+$blue-light: #02A9E0;
+$blue-dark: #1B5091;
+$gold: #D5B56E;
+$dark-gradient: linear-gradient(60.56deg, #071321 9.84%, #00001F 56.71%, #071321 103.58%);
+
+// Fonts
+$font-primary: 'Poppins', sans-serif;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;

@@ -1,0 +1,23 @@
+@use 'variables' as *;
+.header {
+  background: $black;
+  padding: 1rem;
+  &-logo {
+    img {
+      width: 9.2rem;
+      height: 2.08rem;
+    }
+  }
+}
+
+@include respond-min($breakpoint-lg) {
+  .header {
+    padding: 1.5rem;
+    &-logo {
+      img {
+        width: 12.6rem;
+        height: 3.125rem;
+      }
+    }
+  }
+}
